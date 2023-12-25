@@ -39,6 +39,18 @@
             max-height: 800px; /* Set a maximum height for the image */
         }
 
+        .additional-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .additional-images img {
+            max-width: 30%;
+            max-height: 400px;
+            margin: 10px;
+        }
+
         @keyframes backgroundAnimation {
             0% {
                 background-color: #3498db; /* Blue background */
@@ -63,6 +75,12 @@
 
     <!-- Replace 'path/to/your/image.jpg' with the actual path to your image file -->
     <img id="myImage" src="Bhai.jpg" alt="">
+
+    <!-- Additional Images -->
+    <div class="additional-images">
+        <img src="B2.jpg" alt="">
+        <img src="ssg.jpg" alt="">
+    </div>
 
 </body>
 </html>
