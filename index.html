@@ -50,9 +50,10 @@
             margin: 10px auto; /* Center images horizontally */
         }
 
-        /* Style specifically for the third image "ssg.jpg" */
-        .additional-images img.double-size {
-            max-width: 48%; /* Double the size */
+        /* Style specifically for the third image "ssg.jpg" and fourth image "bme.jpg" */
+        .additional-images img.double-size,
+        .additional-images img.same-size {
+            max-width: 48%; /* Same size as "ssg.jpg" */
         }
 
         @keyframes backgroundAnimation {
@@ -84,6 +85,7 @@
     <div class="additional-images">
         <img src="B2.jpg" alt="Image B2">
         <img src="ssg.jpg" alt="Image SSG" class="double-size">
+        <img src="bme.jpg" alt="Image BME" class="same-size">
     </div>
 
 </body>
