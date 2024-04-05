@@ -17,27 +17,32 @@
             height: 100vh;
             animation: backgroundAnimation 10s infinite alternate;
         }
+
         #floatingName {
             font-size: 80px;
             font-weight: bold;
             margin-top: 50px;
             color: #2ecc71; /* Green color for the name */
         }
+
         #intro {
             text-align: center;
             font-size: 60px;
             margin-bottom: 40px;
             color: #ffffff; /* White color for the introduction */
         }
+
         #myImage {
             max-width: 120%;
             height: 700px;
             margin: 10px 0; /* Adjusted margin for better scrolling */
             max-height: 800px; /* Set a maximum height for the image */
         }
+
         .additional-images {
             margin-top: 20px;
         }
+
         .additional-images img {
             display: block; /* Force images to be block elements */
             max-width: 30%;
@@ -45,10 +50,6 @@
             margin: 10px auto; /* Center images horizontally */
         }
 
-        /* Style specifically for the third image "ssg.jpg" */
-        .additional-images img.double-size {
-            max-width: 48%; /* Double the size */
-        }
         /* Style specifically for the third image "ssg.jpg" and fourth image "bme.jpg" */
         .additional-images img.double-size,
         .additional-images img.same-size {
@@ -57,26 +58,36 @@
 
         @keyframes backgroundAnimation {
             0% {
-                background-color: #3498db; /* Initial color */
+                background-color: #3498db; /* Blue background */
             }
             50% {
-                background-color: #e74c3c; /* Intermediate color */
+                background-color: #e67e22; /* Orange background */
             }
             100% {
-                background-color: #3498db; /* Final color */
+                background-color: #3498db; /* Blue background */
             }
         }
     </style>
+    <title>Welcome to My Page</title>
 </head>
 <body>
-    <div id="floatingName">Your Name</div>
-    <div id="intro">Introduction Text</div>
-    <img src="myImage.jpg" alt="My Image" id="myImage">
+
+    <div id="floatingName">Aayush Aryal</div>
+    
+    <div id="intro">
+        <p>Welcome to my page! I'm Aayush Aryal. Life is way too short, live like you are dying tomorrow.</p>
+    </div>
+
+    <!-- Replace 'path/to/your/image.jpg' with the actual path to your image file -->
+    <img id="myImage" src="Bhai.jpg" alt="">
+
+    <!-- Additional Images -->
     <div class="additional-images">
         <img src="B2.jpg" alt="Image B2">
         <img src="ssg.jpg" alt="Image SSG" class="double-size">
         <img src="bme.jpg" alt="Image BME" class="same-size">
-        <img src="bme1.jpg" alt="Image BME1" class="same-size">
+        <img src="bme1.jpg" alt="Image BME1" class="same-size"> <!-- New image -->
     </div>
+
 </body>
 </html>
